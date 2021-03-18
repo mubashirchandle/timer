@@ -1,4 +1,4 @@
-# guardian
+# Timer
 Timer to use before indulging in distracting/mindless activities.
 
 The timer requires the user to stay at the same page for 60 seconds without changeing the window or the browser tab.
