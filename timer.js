@@ -1,5 +1,5 @@
 // Multiply the required seconds by 10 to allow the timer to run in 100 ms intervals for better responsiveness in tab-change detection.
-var TIMER_DURATION = 3 * 10;
+var TIMER_DURATION = 60 * 10;
 
 function startTimer(callback) {
     var timeLeft = TIMER_DURATION;
@@ -28,5 +28,6 @@ startTimer((timeLeft) => {
         document.getElementById("status").innerHTML = "Timer Finished!";
     } else {
         document.getElementById("status").innerHTML = "Timer Interrupted at " + timeLeft + "!";
+        document.body.classList.add("paused");
     }
 });

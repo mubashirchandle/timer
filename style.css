@@ -1,5 +1,28 @@
 body {
     font-family: sans-serif;
+    animation: background_change 15s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    color: white;
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
+    background-size: 200% 100%;
+}
+
+@keyframes background_change {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .centered {
@@ -7,7 +30,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
 }
 
