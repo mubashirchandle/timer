@@ -25,9 +25,9 @@ startTimer((timeLeft) => {
     document.getElementById("timer_text").hidden = true;
 
     if (timeLeft == 0) {
-        document.getElementById("status").innerHTML = "Timer Finished!";
+        document.getElementById("status").innerHTML = "Timer Finished! 🥳";
     } else {
-        document.getElementById("status").innerHTML = "Timer Interrupted at " + timeLeft + "!";
+        document.getElementById("status").innerHTML = "Timer Interrupted at " + timeLeft + " ☹️";
         document.body.classList.add("paused");
     }
 });
